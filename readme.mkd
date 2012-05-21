@@ -1,0 +1,9 @@
+# fakjs for your javascript stubbing needs.
+
+To fake out a return value.
+
+```javascript
+  var fake = new Fake();
+  fake.stub('greet').with('mo').andReturn('hello mo');
+  expect(fake.greet('mo')).toEqual('hello mo');
+```
